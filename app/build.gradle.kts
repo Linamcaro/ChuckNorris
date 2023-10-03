@@ -53,24 +53,26 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    //lifecycle
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+
 
     //navigation
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
 
     //Retrofit
     implementation ("com.squareup.retrofit2:retrofit:$retrofit_version")
     implementation ("com.squareup.retrofit2:converter-gson:$retrofit_version")
 
     // ViewModel and LiveData
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    //implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 
 
     // Coroutines
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
+    //implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version")
+    //implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
 
     //Test
     testImplementation("junit:junit:4.13.2")

@@ -8,8 +8,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object AppModule {
 
-    fun provideBaseUrl() = Constants.BASE_URL
-
     fun provideRetrofitInstance(BASE_URL : String): APIService {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
