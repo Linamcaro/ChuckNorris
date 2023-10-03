@@ -8,10 +8,10 @@ import retrofit2.http.Query
 interface APIService {
 
     @GET(Constants.End_Point_JokeByCategory)
-    suspend fun getRandomJokeByCategory(@Query("category") category: String): Response<ChuckNorris>
+    suspend fun getRandomJokeByCategory(@Query("category") category: String): JokeResponse
 
     @GET(Constants.End_Point_Categories)
-    suspend fun getCategory(): Response<CategorieResponse>
+    suspend fun getCategory(): CategoriesResponse
 
 
 }

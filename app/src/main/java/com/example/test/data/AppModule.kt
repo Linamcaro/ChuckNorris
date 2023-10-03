@@ -1,4 +1,4 @@
-package com.example.test.di
+package com.example.test.data
 
 import com.example.test.Constants
 import com.example.test.model.APIService
@@ -10,12 +10,11 @@ object AppModule {
 
     fun provideBaseUrl() = Constants.BASE_URL
 
-
-    fun provideRetrofitInstance(BASE_URL : String): APIService =
-        Retrofit.Builder()
+    fun provideRetrofitInstance(BASE_URL : String): APIService {
+        return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(APIService::class.java)
-
+    }
 }
